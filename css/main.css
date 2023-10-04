@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg.png') repeat top left;
+    font-family: 'Lato', sans-serif;
+}
+
+.container-tabs{
+    padding: 3rem;
+}
+
+.container-tabs .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.container-tabs .container-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.container-tabs .container-center .content-grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.container-tabs .container-center .content-images img{
+    width: 100%;
+}
+
+.container-tabs .container-center .content-grid .content-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.container-tabs .container-center .content-grid .content-btns .tab-btn{
+    border: 0;
+    padding: 1rem 0;
+    cursor: pointer;        
+}
+
+.container-tabs .container-center .content-grid .content-btns .tab-btn.active{
+    background: rgb(94, 90, 84);
+    color: #FFF; 
+}
+
+.container-tabs .container-center .content-grid .content{
+    display: none;
+}
+
+.container-tabs .container-center .content-grid .content.active{
+    display: block;
+}
+
+.container-tabs .container-center .content-grid .content h2{
+    margin-bottom: 0.75rem;
+}
+
+ul,
+ol{
+    padding: 2rem 1rem;
+}
+
+ul li,
+ol li{
+    padding-block: 0.20rem;
+}
+
+strong{
+    margin-block: 1rem;
+}
+
+@media(max-width:990px){
+    .container-tabs .container-center{
+        grid-template-columns: 1fr;
+    }
+
+    .container-tabs .container-center .content-images{
+        margin-bottom: 1rem;
+    }
+}
